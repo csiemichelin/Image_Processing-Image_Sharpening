@@ -23,13 +23,13 @@
 **1. Laplacian operator**   
 &emsp;(1) 目的 : 與 smooth spatial filters 相反，主要用在 edge detection 上，也就是把影像中，物體的邊界找出來，利用二階微分實現 Laplacian operator。我所使用的 Laplacian mask 有以下兩種:   
 &emsp;故選取 center 為負的 image enhancement basic Laplacian operator 去做，使用雙層迴圈完成上面的公式，實現影像銳化的效果，且用 saturate_cast 函數防止資料溢位。    
-&emsp;(2) 公式 :   
+&emsp;(2) 公式 :      
 &emsp;&emsp;I. Space domain:   
 &emsp;&emsp;&emsp;對影像微分，指的就是影像的像素值相減，再進行二次微分得到:   
-&emsp;&emsp;&emsp最後代入 Laplacian operator 得到:    
-&emsp;&emsp;&emsp而在 image enhancement 上使用的 basic Laplacian operator 為:    
-&emsp;&emsp;&emsp而這裡通常是用在銳化圖像上，故我們選取 center 為正的去做，其四鄰域化簡後的一般式為:   
-&emsp;&emsp;Frequency domain:   
+&emsp;&emsp;&emsp;最後代入 Laplacian operator 得到:    
+&emsp;&emsp;&emsp;而在 image enhancement 上使用的 basic Laplacian operator 為:    
+&emsp;&emsp;&emsp;而這裡通常是用在銳化圖像上，故我們選取 center 為正的去做，其四鄰域化簡後的一般式為:   
+&emsp;&emsp;II. Frequency domain:   
 &emsp;&emsp;&emsp;對 n 階偏微分進行 DFT 來做推倒:   
 &emsp;&emsp;&emsp;得到 Laplacian of f(x,y)為:   
 &emsp;&emsp;&emsp;其 Filter 為:   
