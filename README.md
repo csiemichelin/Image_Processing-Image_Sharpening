@@ -37,7 +37,7 @@
 &emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/5.png" width="300" height="80">        
 &emsp;&emsp;II. Frequency domain:   
 &emsp;&emsp;&emsp;對 n 階偏微分進行 DFT 來做推倒:   
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/6.png" width="210" height="100">    
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/6.png" width="250" height="150">    
 &emsp;&emsp;&emsp;得到 Laplacian of f(x,y)為:   
 &emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/7.png" width="180" height="30">   
 &emsp;&emsp;&emsp;其 Filter 為:   
