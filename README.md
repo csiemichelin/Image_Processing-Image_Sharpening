@@ -54,17 +54,21 @@
 &emsp;&emsp;&emsp;與 space domain 原理大致相同，但這裡的 low pass filter 採用 gaussian filter:   
 &emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/12.png" width="150"   height="50">   
 &emsp;&emsp;&emsp;再將原 gray level 扣除 gaussian low pass filter 的結果:  
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/13.png" width="160" height="25">    
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/13.png" width="160" height="24">    
 &emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/14.png" width="160" height="25">   
 &emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/15.png" width="160" height="25">   
 **3. high-boost filtering**   
 &emsp;(1) 目的 : 與 unsharp masking 類似，不過在減去 blurred version 前，原影像會先乘上 A 倍且 A>=1。  
 &emsp;&emsp;以 space filter 為例，鈍化遮罩：以本身影像減一個較為模糊之影像產生:   
-&emsp;&emsp;其中 為模糊的影像，把遮罩以一個權重值加回原本影像   
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/16.png" width="160" height="24">  
+&emsp;&emsp;其中<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/17.png" width="40" height="24">為模糊的影像，把遮罩以一個權重值加回原本影像   
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/18.png" width="160" height="24">  
 &emsp;&emsp;其中 k = 1 的時候為 unsharp masking filter，k > 1 時為 high-boost filtering。   
 &emsp;(2) 公式 :     
 &emsp;&emsp;I. Space domain: A>=1    
-&emsp;&emsp;II. Frequency domain: A>=1，這裡的 low pass filter 採用 gaussian filter:   
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/19.png" width="270" height="80">  
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/20.png" width="160" height="24">  
+&emsp;&emsp;II. Frequency domain: A>=1，這裡的 low pass filter 採用 gaussian filter    
 ## Experimental_results
 &emsp;(1) 前置作業 :      
 &emsp;&emsp;(一) 作業系統 : Windows 10 家用版     
