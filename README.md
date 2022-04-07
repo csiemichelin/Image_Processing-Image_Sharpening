@@ -30,18 +30,18 @@
 &emsp;&emsp;&emsp;對影像微分，指的就是影像的像素值相減，再進行二次微分得到:   
 &emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/2.png" width="150" height="90">      
 &emsp;&emsp;&emsp;最後代入 Laplacian operator 得到:  
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/3.png" width="150" height="110">      
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/3.png" width="150" height="90">       
 &emsp;&emsp;&emsp;而在 image enhancement 上使用的 basic Laplacian operator 為:    
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/4.png" width="130" height="120">      
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/4.png" width="150" height="130">       
 &emsp;&emsp;&emsp;而這裡通常是用在銳化圖像上，故我們選取 center 為正的去做，其四鄰域化簡後的一般式為:   
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/5.png" width="300" height="100">      
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/5.png" width="350" height="120">        
 &emsp;&emsp;II. Frequency domain:   
 &emsp;&emsp;&emsp;對 n 階偏微分進行 DFT 來做推倒:   
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/6.png" width="400" height="100">    
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/6.png" width="210" height="110">    
 &emsp;&emsp;&emsp;得到 Laplacian of f(x,y)為:   
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/7.png" width="250" height="100">    
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/7.png" width="180" height="35">   
 &emsp;&emsp;&emsp;其 Filter 為:   
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/8.png" width="250" height="100">          
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/8.png" width="130" height="35">         
 **2. unsharp masking**    
 &emsp;(1) 目的 : 將原圖扣除模糊的部分(blurred version)得到銳化的部分，再銳化的部分加回原圖。以 space filter 為例，我所使用的 average filter mask 為以下兩種:  
 &emsp;&emsp;先對其做 smooth spatial filter(此為 average filter)，也就是將所有權種加以來再進行平均，再將原圖扣掉其結果即為銳化的部分再將原圖加回銳化則可完成 sharping。   
