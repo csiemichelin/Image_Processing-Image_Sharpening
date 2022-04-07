@@ -34,7 +34,7 @@
 &emsp;&emsp;&emsp;而在 image enhancement 上使用的 basic Laplacian operator 為:    
 &emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/4.png" width="270" height="90">      
 &emsp;&emsp;&emsp;而這裡通常是用在銳化圖像上，故我們選取 center 為正的去做，其四鄰域化簡後的一般式為:   
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/5.png" width="330" height="95">      
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/5.png" width="330" height="90">      
 &emsp;&emsp;II. Frequency domain:   
 &emsp;&emsp;&emsp;對 n 階偏微分進行 DFT 來做推倒:   
 &emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/6.png" width="250" height="130">    
