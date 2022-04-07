@@ -1,9 +1,9 @@
 # Image_Processing-Image_Sharpening
 ## 目錄
- - [Data handed in](#Data handed in)
- - [Technical description](#Technical description)
- - [Experimental results](#Experimental results)  
-## Data handed in  
+ - [Data_handed_in](#Data_handed_in)
+ - [Technical_description](#Technical_description)
+ - [Experimental_results](#Experimental_results)  
+## Data_handed_in  
 **1. Laplacian operator 資料夾**  
 &emsp;Laplacian operator.cpp  
 &emsp;Laplacian operator.exe  
@@ -19,12 +19,12 @@
 &emsp;high-boost filtering.exe  
 &emsp;blurry_moon.tif    
 &emsp;skeleton_orig.bmp  
-## Technical description  
+## Technical_description  
 **1. Laplacian operator**   
 &emsp;(1) 目的 : 與 smooth spatial filters 相反，主要用在 edge detection 上，也就是把影像中，物體的邊界找出來，利用二階微分實現 Laplacian operator。我所使用的 Laplacian mask 有以下兩種:   
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/1.png" width="350" height="150">     
-https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/1.png
-&emsp;故選取 center 為負的 image enhancement basic Laplacian operator 去做，使用雙層迴圈完成上面的公式，實現影像銳化的效果，且用 saturate_cast 函數防止資料溢位。    
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/1.png" width="250" height="150">     
+
+&emsp;&emsp;故選取 center 為負的 image enhancement basic Laplacian operator 去做，使用雙層迴圈完成上面的公式，實現影像銳化的效果，且用 saturate_cast 函數防止資料溢位。    
 &emsp;(2) 公式 :      
 &emsp;&emsp;I. Space domain:   
 &emsp;&emsp;&emsp;對影像微分，指的就是影像的像素值相減，再進行二次微分得到:   
@@ -60,7 +60,7 @@ https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech
 &emsp;(2) 公式 :     
 &emsp;&emsp;I. Space domain: A>=1    
 &emsp;&emsp;II. Frequency domain: A>=1，這裡的 low pass filter 採用 gaussian filter:   
-## Experimental results
+## Experimental_results
 &emsp;(1) 前置作業 :      
 &emsp;&emsp;(一) 作業系統 : Windows 10 家用版     
 &emsp;&emsp;(二) Visual studio 版本 : Visual Studio 2019     
