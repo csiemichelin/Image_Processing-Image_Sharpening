@@ -22,17 +22,17 @@
 ## Technical_description  
 **1. Laplacian operator**   
 &emsp;(1) 目的 : 與 smooth spatial filters 相反，主要用在 edge detection 上，也就是把影像中，物體的邊界找出來，利用二階微分實現 Laplacian operator。我所使用的 Laplacian mask 有以下兩種:   
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/1.png" width="230" height="120">     
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/1.png" width="230" height="150">     
 
 &emsp;&emsp;故選取 center 為負的 image enhancement basic Laplacian operator 去做，使用雙層迴圈完成上面的公式，實現影像銳化的效果，且用 saturate_cast 函數防止資料溢位。    
 &emsp;(2) 公式 :      
 &emsp;&emsp;I. Space domain:   
 &emsp;&emsp;&emsp;對影像微分，指的就是影像的像素值相減，再進行二次微分得到:   
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/2.png" width="150" height="50">      
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/2.png" width="150" height="70">      
 &emsp;&emsp;&emsp;最後代入 Laplacian operator 得到:  
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/3.png" width="150" height="50">      
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/3.png" width="150" height="70">      
 &emsp;&emsp;&emsp;而在 image enhancement 上使用的 basic Laplacian operator 為:    
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/4.png" width="150" height="50">      
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/4.png" width="150" height="80">      
 &emsp;&emsp;&emsp;而這裡通常是用在銳化圖像上，故我們選取 center 為正的去做，其四鄰域化簡後的一般式為:   
 &emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/5.png" width="350" height="90">      
 &emsp;&emsp;II. Frequency domain:   
