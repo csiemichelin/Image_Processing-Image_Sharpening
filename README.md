@@ -28,11 +28,11 @@
 &emsp;(2) 公式 :      
 &emsp;&emsp;I. Space domain:   
 &emsp;&emsp;&emsp;對影像微分，指的就是影像的像素值相減，再進行二次微分得到:   
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/2.png" width="200" height="90">      
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/2.png" width="150" height="50">      
 &emsp;&emsp;&emsp;最後代入 Laplacian operator 得到:  
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/3.png" width="250" height="80">      
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/3.png" width="150" height="50">      
 &emsp;&emsp;&emsp;而在 image enhancement 上使用的 basic Laplacian operator 為:    
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/4.png" width="230" height="70">      
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/4.png" width="150" height="50">      
 &emsp;&emsp;&emsp;而這裡通常是用在銳化圖像上，故我們選取 center 為正的去做，其四鄰域化簡後的一般式為:   
 &emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/5.png" width="350" height="90">      
 &emsp;&emsp;II. Frequency domain:   
