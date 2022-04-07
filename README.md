@@ -39,7 +39,7 @@
 &emsp;&emsp;&emsp;對 n 階偏微分進行 DFT 來做推倒:   
 &emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/6.png" width="250" height="130">    
 &emsp;&emsp;&emsp;得到 Laplacian of f(x,y)為:   
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/7.png" width="170" height="35">    
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/7.png" width="180" height="35">    
 &emsp;&emsp;&emsp;其 Filter 為:   
 &emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/8.png" width="130" height="35">          
 **2. unsharp masking**    
