@@ -45,18 +45,18 @@
 **2. unsharp masking**    
 &emsp;(1) 目的 : 將原圖扣除模糊的部分(blurred version)得到銳化的部分，再銳化的部分加回原圖。以 space filter 為例，我所使用的 average filter mask 為以下兩種:  
 &emsp;&emsp;先對其做 smooth spatial filter(此為 average filter)，也就是將所有權種加以來再進行平均，再將原圖扣掉其結果即為銳化的部分再將原圖加回銳化則可完成 sharping。   
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/9.png" width="240" height="120">  
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/9.png" width="260" height="120">  
 &emsp;(2) 公式 :  
 &emsp;&emsp;I. Space domain:   
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/10.png" width="130" height="35">得到銳化的圖。  
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/11.png" width="40" height="35">  為 blurred version of f(x,y)，這裡我們使用 average filter 去實現。
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/10.png" width="130" height="30">得到銳化的圖。  
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/11.png" width="40" height="25">  為 blurred version of f(x,y)，這裡我們使用 average filter 去實現。
 &emsp;&emsp;II. Frequency domain:     
 &emsp;&emsp;&emsp;與 space domain 原理大致相同，但這裡的 low pass filter 採用 gaussian filter:   
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/12.png" width="180"   height="50">   
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/12.png" width="160"   height="50">   
 &emsp;&emsp;&emsp;再將原 gray level 扣除 gaussian low pass filter 的結果:  
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/13.png" width="130" height="35">    
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/14.png" width="130" height="35">   
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/15.png" width="130" height="35">   
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/13.png" width="150" height="30">    
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/14.png" width="150" height="30">   
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/15.png" width="150" height="30">   
 **3. high-boost filtering**   
 &emsp;(1) 目的 : 與 unsharp masking 類似，不過在減去 blurred version 前，原影像會先乘上 A 倍且 A>=1。  
 &emsp;&emsp;以 space filter 為例，鈍化遮罩：以本身影像減一個較為模糊之影像產生:   
