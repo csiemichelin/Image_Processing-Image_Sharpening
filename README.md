@@ -61,7 +61,7 @@
 &emsp;(1) 目的 : 與 unsharp masking 類似，不過在減去 blurred version 前，原影像會先乘上 A 倍且 A>=1。  
 &emsp;&emsp;以 space filter 為例，鈍化遮罩：以本身影像減一個較為模糊之影像產生:   
 &emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/16.png" width="160" height="26">  
-&emsp;&emsp;其中<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/17.png" width="40" height="24">為模糊的影像，把遮罩以一個權重值加回原本影像   
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/11.png" width="40" height="25">為模糊的影像，把遮罩以一個權重值加回原本影像   
 &emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/17.png" width="160" height="24">  
 &emsp;&emsp;其中 k = 1 的時候為 unsharp masking filter，k > 1 時為 high-boost filtering。   
 &emsp;(2) 公式 :     
