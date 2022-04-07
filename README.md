@@ -49,7 +49,7 @@
 &emsp;(2) 公式 :  
 &emsp;&emsp;I. Space domain:   
 &emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/10.png" width="130" height="30">得到銳化的圖。  
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/11.png" width="40" height="25">  為 blurred version of f(x,y)，這裡我們使用 average filter 去實現。
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/11.png" width="40" height="25">  為 blurred version of f(x,y)，這裡我們使用 average filter 去實現。  
 &emsp;&emsp;II. Frequency domain:     
 &emsp;&emsp;&emsp;與 space domain 原理大致相同，但這裡的 low pass filter 採用 gaussian filter:   
 &emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/12.png" width="150"   height="50">   
