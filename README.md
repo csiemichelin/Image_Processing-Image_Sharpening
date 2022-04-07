@@ -28,7 +28,7 @@
 &emsp;(2) 公式 :      
 &emsp;&emsp;I. Space domain:   
 &emsp;&emsp;&emsp;對影像微分，指的就是影像的像素值相減，再進行二次微分得到:   
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/2.png" width="150" height="100">      
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/2.png" width="200" height="130">      
 &emsp;&emsp;&emsp;最後代入 Laplacian operator 得到:  
 &emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/3.png" width="350" height="150">      
 &emsp;&emsp;&emsp;而在 image enhancement 上使用的 basic Laplacian operator 為:    
