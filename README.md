@@ -78,7 +78,7 @@
 &emsp;&emsp;&emsp;https://forum.gamer.com.tw/C.php?bsn=60292&snA=6494    
 &emsp;(2) Laplacian operator(左:原圖，中:space filter，右:frequency filter)    
 &emsp;&emsp;(一) blurry_moon.tif   
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/res_image/1.png" width="400" height="200">  
+&emsp;&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/res_image/1.png" width="450" height="150">  
 &emsp;&emsp;(二) skeleton_orig.bmp   
 &emsp;(3) unsharp masking(左:原圖，中:space filter，右:frequency filter)     
 &emsp;&emsp;(一) blurry_moon.tif   
