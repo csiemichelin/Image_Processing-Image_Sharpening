@@ -62,12 +62,12 @@
 &emsp;&emsp;以 space filter 為例，鈍化遮罩：以本身影像減一個較為模糊之影像產生:   
 &emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/16.png" width="160" height="26">  
 &emsp;&emsp;其中<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/17.png" width="40" height="24">為模糊的影像，把遮罩以一個權重值加回原本影像   
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/18.png" width="160" height="24">  
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/17.png" width="160" height="24">  
 &emsp;&emsp;其中 k = 1 的時候為 unsharp masking filter，k > 1 時為 high-boost filtering。   
 &emsp;(2) 公式 :     
 &emsp;&emsp;I. Space domain: A>=1    
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/18.png" width="270" height="80">  
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/19.png" width="160" height="24">  
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/18.png" width="280" height="80">  
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/19.png" width="165" height="24">  
 &emsp;&emsp;II. Frequency domain: A>=1，這裡的 low pass filter 採用 gaussian filter    
 ## Experimental_results
 &emsp;(1) 前置作業 :      
