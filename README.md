@@ -52,11 +52,11 @@
 &emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/11.png" width="40" height="25">  為 blurred version of f(x,y)，這裡我們使用 average filter 去實現。
 &emsp;&emsp;II. Frequency domain:     
 &emsp;&emsp;&emsp;與 space domain 原理大致相同，但這裡的 low pass filter 採用 gaussian filter:   
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/12.png" width="160"   height="50">   
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/12.png" width="150"   height="50">   
 &emsp;&emsp;&emsp;再將原 gray level 扣除 gaussian low pass filter 的結果:  
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/13.png" width="150" height="30">    
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/14.png" width="150" height="30">   
-&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/15.png" width="150" height="30">   
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/13.png" width="160" height="30">    
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/14.png" width="160" height="30">   
+&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/tech_image/15.png" width="160" height="30">   
 **3. high-boost filtering**   
 &emsp;(1) 目的 : 與 unsharp masking 類似，不過在減去 blurred version 前，原影像會先乘上 A 倍且 A>=1。  
 &emsp;&emsp;以 space filter 為例，鈍化遮罩：以本身影像減一個較為模糊之影像產生:   
