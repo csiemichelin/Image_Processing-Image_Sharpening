@@ -84,7 +84,7 @@
 &emsp;(3) unsharp masking(左:原圖，中:space filter，右:frequency filter)     
 &emsp;&emsp;(一) blurry_moon.tif   
 &emsp;&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/res_image/3.png" width="450" height="180">  
-&emsp;&emsp;(二) skeleton_orig.bmp 
+&emsp;&emsp;(二) skeleton_orig.bmp   
 &emsp;&emsp;&emsp;&emsp;<img src="https://github.com/csiemichelin/Image_Processing-Image_Sharpening/blob/main/res_image/4.png" width="450" height="230">   
 &emsp;(4) high-boost filtering(左:原圖，中:space filter，右:frequency filter)     
 &emsp;&emsp;(一) blurry_moon.tif   
